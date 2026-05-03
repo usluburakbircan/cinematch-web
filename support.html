@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destek — CinaMatch</title>
+  <meta name="description" content="CinaMatch destek sayfası — sıkça sorulan sorular, iletişim bilgileri ve geri bildirim." />
+  <meta name="theme-color" content="#141110" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+      <nav class="nav">
+        <a href="index.html#features">Özellikler</a>
+        <a href="index.html#faq">SSS</a>
+        <a href="index.html#download" class="btn btn--primary">İndir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <div class="legal__inner">
+        <a class="legal__back" href="index.html">← Ana sayfa</a>
+        <h1>Destek &amp; iletişim</h1>
+        <p class="legal__updated">Sorularını yanıtlamaya, geri bildirimini almaya hazırız</p>
+
+        <p>
+          Bir sorunla karşılaştıysan, bir özellik öneriyorsan ya da sadece "şu film
+          neden yok?" demek istiyorsan — bize ulaşmaktan çekinme.
+        </p>
+
+        <h2>Doğrudan iletişim</h2>
+        <ul>
+          <li><strong>Genel destek:</strong> <a href="mailto:support@cinematch.app">support@cinematch.app</a></li>
+          <li><strong>Gizlilik talepleri:</strong> <a href="mailto:privacy@cinematch.app">privacy@cinematch.app</a></li>
+          <li><strong>Hesap silme:</strong> <a href="mailto:delete@cinematch.app">delete@cinematch.app</a> · ya da <a href="delete-account.html">silme talep formu</a></li>
+          <li><strong>Yasal:</strong> <a href="mailto:legal@cinematch.app">legal@cinematch.app</a></li>
+          <li><strong>Basın &amp; iş birliği:</strong> <a href="mailto:hello@cinematch.app">hello@cinematch.app</a></li>
+        </ul>
+
+        <p class="muted" style="margin-top: 8px;">
+          Ortalama yanıt süresi: <strong>24 saat</strong>. Hafta sonları ve resmi tatillerde 48 saate kadar uzayabilir.
+        </p>
+
+        <h2>Geri bildirim formu</h2>
+        <form class="form" action="mailto:support@cinematch.app" method="POST" enctype="text/plain">
+          <div class="form__field">
+            <label for="email">E-postan</label>
+            <input type="email" id="email" name="E-posta" required placeholder="ornek@cinematch.app" />
+          </div>
+          <div class="form__field">
+            <label for="topic">Konu</label>
+            <input type="text" id="topic" name="Konu" required placeholder="Bir özellik öneriyorum / bir hata var..." />
+          </div>
+          <div class="form__field">
+            <label for="message">Mesajın</label>
+            <textarea id="message" name="Mesaj" required placeholder="Mümkün olduğunca detay ver — ekran görüntüsü eklemek istersen ayrı e-posta atabilirsin."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Gönder</button>
+        </form>
+
+        <h2>Hızlı çözümler</h2>
+
+        <details class="faq__item">
+          <summary>Şifremi unuttum, ne yapmalıyım?</summary>
+          <div class="faq__item__body">
+            Şu an "şifre sıfırlama" özelliği uygulamada yok (yakında geliyor). Aşağıdaki
+            adımları izle: <a href="mailto:support@cinematch.app">support@cinematch.app</a>
+            adresine hesap e-postanı yaz. 24 saat içinde manuel sıfırlama linki gönderilir.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Aradığım film/dizi OMDb'de yok</summary>
+          <div class="faq__item__body">
+            CinaMatch arama sonuçlarını OMDb'den çeker. Aradığın başlık IMDb'de varsa
+            ama bizde gelmiyorsa, başlığı düzgün İngilizce yazmayı dene. Hâlâ yoksa
+            OMDb'nin bazı bölgesel başlıkları indekslememiş olabilir — bize haber ver,
+            başlığı manuel olarak ekleyelim.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Eşleşme skorum çok düşük çıkıyor</summary>
+          <div class="faq__item__body">
+            Algoritma şunlara bakar: top 5 filmler (35%), onboarding cevapları (30%),
+            yönetmen/tür/anime etiketleri (25%), mood &amp; ayarlar (10%). Profilin
+            ne kadar dolu olursa skor o kadar yükselir. Eşik %50'nin altında kart
+            görüntüleyemezsen Ayarlar'dan eşik seviyesini düşürebilirsin.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Bildirimler gelmiyor</summary>
+          <div class="faq__item__body">
+            Telefon ayarlarından CinaMatch'e bildirim izni verdiğinden emin ol.
+            Uygulamayı bir kez aç-kapat — push token'ı yeniden kayıt edilir. Sorun
+            devam ederse bize ulaş.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>Bir kullanıcıyı şikayet etmek istiyorum</summary>
+          <div class="faq__item__body">
+            Şu an in-app şikayet sistemi geliştirme aşamasında. Acil bir durum için
+            <a href="mailto:support@cinematch.app">support@cinematch.app</a> adresine
+            kullanıcı handle'ını ve durumu açıkla — 24 saat içinde gerekli aksiyon
+            alınır.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary>İş birliği / basın talebi</summary>
+          <div class="faq__item__body">
+            Sinema dergileri, festival paydaşlıkları, akademik araştırmalar için
+            <a href="mailto:hello@cinematch.app">hello@cinematch.app</a> adresine yaz.
+          </div>
+        </details>
+
+        <h2>Topluluk</h2>
+        <p>
+          Yapılacaklar listesi, sürüm notları ve geliştirme akışını takip etmek için
+          ileride Discord ve X (Twitter) hesaplarımızı duyuracağız.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+          <p class="muted" style="margin-top: 14px; font-size: 13px; max-width: 280px;">
+            Sinema zevkine göre kurulan anonim, spoiler-güvenli eşleşme uygulaması.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col__title">Ürün</div>
+          <ul class="footer-col__links">
+            <li><a href="index.html#features">Özellikler</a></li>
+            <li><a href="index.html#how">Nasıl çalışır</a></li>
+            <li><a href="index.html#faq">SSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Hesap</div>
+          <ul class="footer-col__links">
+            <li><a href="delete-account.html">Hesabı sil</a></li>
+            <li><a href="support.html">Destek</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Yasal</div>
+          <ul class="footer-col__links">
+            <li><a href="privacy.html">Gizlilik politikası</a></li>
+            <li><a href="terms.html">Kullanıcı sözleşmesi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CinaMatch · Tüm hakları saklıdır.</span>
+        <span>Sinema verileri OMDb tarafından sağlanır.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

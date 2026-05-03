@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesabı Sil — CinaMatch</title>
+  <meta name="description" content="CinaMatch hesabını ve tüm verilerini kalıcı olarak silmek için talimatlar ve iletişim formu." />
+  <meta name="theme-color" content="#141110" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+      <nav class="nav">
+        <a href="privacy.html">Gizlilik</a>
+        <a href="support.html">Destek</a>
+        <a href="index.html#download" class="btn btn--primary">İndir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <div class="legal__inner">
+        <a class="legal__back" href="index.html">← Ana sayfa</a>
+        <h1>Hesabını sil</h1>
+        <p class="legal__updated">CinaMatch hesabının ve tüm verilerinin kalıcı olarak silinmesi</p>
+
+        <p>
+          Hesabını silmek istediğin için üzgünüz. Aşağıdaki yollardan biriyle hesabını
+          ve tüm ilişkili verilerini <strong>geri dönülmez şekilde</strong> kaldırabilirsin.
+        </p>
+
+        <div class="callout callout--danger">
+          <strong>Silinen veriler:</strong> profil, top 5 filmler, yönetmen/tür/anime tercihleri,
+          onboarding cevapları, eşleşmeler, sohbetler, mesajlar, bildirimler, push token'ı,
+          avatar dosyası. <em>Hiçbir yedeği saklanmaz.</em>
+        </div>
+
+        <h2>Yöntem 1 — Uygulama içinden (önerilen)</h2>
+        <p>En hızlı ve doğrulanmış yöntemdir.</p>
+        <ol>
+          <li>CinaMatch'i aç ve giriş yap.</li>
+          <li>Alt navigasyondan <strong>Ayar</strong> sekmesine git.</li>
+          <li>Sayfanın altındaki <strong>"Hesabı sil"</strong> butonuna dokun.</li>
+          <li>Onay diyaloğunda <strong>"Hesabı sil"</strong> seçeneğini seç.</li>
+        </ol>
+        <p>Hesabın anında silinir ve giriş ekranına döndürülürsün.</p>
+
+        <h2>Yöntem 2 — Web üzerinden talep</h2>
+        <p>
+          Uygulamaya erişemiyorsan (telefonunu kaybettiysen, parolan unutulmuşsa vb.)
+          aşağıdaki formla silme talebinde bulunabilirsin. Talep <strong>72 saat içinde</strong>
+          işleme alınır ve onay e-postası gönderilir.
+        </p>
+
+        <form class="form" action="mailto:delete@cinematch.app" method="POST" enctype="text/plain">
+          <div class="form__field">
+            <label for="email">Hesap e-postan</label>
+            <input type="email" id="email" name="E-posta" required placeholder="ornek@cinematch.app" />
+          </div>
+          <div class="form__field">
+            <label for="handle">Kullanıcı adın (varsa)</label>
+            <input type="text" id="handle" name="Kullanıcı adı" placeholder="@isclqvgn" />
+          </div>
+          <div class="form__field">
+            <label for="reason">Silme nedeni (opsiyonel — gelişmemize yardımcı olur)</label>
+            <textarea id="reason" name="Neden" placeholder="Birkaç cümleyle anlat..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--danger">Silme talebimi gönder</button>
+        </form>
+
+        <h2>Yöntem 3 — Doğrudan e-posta</h2>
+        <p>
+          Form çalışmıyorsa <a href="mailto:delete@cinematch.app">delete@cinematch.app</a>
+          adresine aşağıdaki bilgileri içeren bir e-posta atabilirsin:
+        </p>
+        <ul>
+          <li>Hesabınla ilişkili e-posta adresi</li>
+          <li>(Varsa) kullanıcı adı / handle</li>
+          <li>"Hesabımı silmek istiyorum" yazısı</li>
+        </ul>
+
+        <h2>Sıkça sorulanlar</h2>
+        <details class="faq__item">
+          <summary>Verilerimin bir kopyasını alabilir miyim?</summary>
+          <div class="faq__item__body">
+            Evet. Silmeden önce
+            <a href="mailto:privacy@cinematch.app">privacy@cinematch.app</a>
+            adresine kopya talebinde bulunabilirsin. JSON formatında 7 gün içinde gönderilir.
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Sildikten sonra geri dönebilir miyim?</summary>
+          <div class="faq__item__body">
+            Hayır. Silme işlemi geri alınamaz. Aynı e-posta ile tekrar kayıt olabilirsin
+            ama eski profil, eşleşmeler ve mesajlar yeniden oluşturulamaz.
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Eşleştiğim kişiler ne görecek?</summary>
+          <div class="faq__item__body">
+            Profilin onların listesinden de kaybolur. Aranızdaki sohbet silinir.
+          </div>
+        </details>
+        <details class="faq__item">
+          <summary>Yedek veya log'larda kalıyor mu?</summary>
+          <div class="faq__item__body">
+            Aktif veritabanında ve yedeklerde 30 gün içinde tamamen silinir. 30 günü
+            aşan, anonimleştirilmemiş hiçbir veri saklanmaz.
+          </div>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+          <p class="muted" style="margin-top: 14px; font-size: 13px; max-width: 280px;">
+            Sinema zevkine göre kurulan anonim, spoiler-güvenli eşleşme uygulaması.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col__title">Ürün</div>
+          <ul class="footer-col__links">
+            <li><a href="index.html#features">Özellikler</a></li>
+            <li><a href="index.html#how">Nasıl çalışır</a></li>
+            <li><a href="index.html#faq">SSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Hesap</div>
+          <ul class="footer-col__links">
+            <li><a href="delete-account.html">Hesabı sil</a></li>
+            <li><a href="support.html">Destek</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Yasal</div>
+          <ul class="footer-col__links">
+            <li><a href="privacy.html">Gizlilik politikası</a></li>
+            <li><a href="terms.html">Kullanıcı sözleşmesi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CinaMatch · Tüm hakları saklıdır.</span>
+        <span>Sinema verileri OMDb tarafından sağlanır.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

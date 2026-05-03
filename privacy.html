@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — CinaMatch</title>
+  <meta name="description" content="CinaMatch gizlilik politikası — hangi verileri topladığımız, nasıl kullandığımız ve haklarınız." />
+  <meta name="theme-color" content="#141110" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+      <nav class="nav">
+        <a href="index.html#features">Özellikler</a>
+        <a href="support.html">Destek</a>
+        <a href="index.html#download" class="btn btn--primary">İndir</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <div class="legal__inner">
+        <a class="legal__back" href="index.html">← Ana sayfa</a>
+        <h1>Gizlilik Politikası</h1>
+        <p class="legal__updated">Son güncelleme: 3 Mayıs 2026</p>
+
+        <p>
+          CinaMatch ("Uygulama", "biz") olarak gizliliğine önem veriyoruz. Bu politika,
+          mobil uygulamamız ve <a href="index.html">cinematch.app</a> web sitemiz aracılığıyla
+          hangi verileri topladığımızı, nasıl kullandığımızı, kimlerle paylaştığımızı ve
+          haklarını nasıl kullanabileceğini açıklar.
+        </p>
+
+        <h2>1. Topladığımız Veriler</h2>
+
+        <h3>1.1 Hesap verileri</h3>
+        <ul>
+          <li>E-posta adresi (zorunlu)</li>
+          <li>Şifre (yalnızca bcrypt hash olarak saklanır, biz dahil kimse okuyamaz)</li>
+          <li>İsim, kullanıcı adı (handle), profil resmi (opsiyonel)</li>
+          <li>Cinsiyet ve eşleşme tercihi</li>
+          <li>Yaş ve şehir (opsiyonel)</li>
+          <li>Sosyal giriş kullanırsan: Google/Apple sağlayıcısının döndürdüğü kimlik (provider_id) ve doğrulanmış e-posta</li>
+        </ul>
+
+        <h3>1.2 Sinema profili</h3>
+        <ul>
+          <li>Top 5 film/dizi seçimlerin (IMDb ID referansları)</li>
+          <li>Yönetmen, tür, anime evreni etiketlerin</li>
+          <li>Onboarding sorularına verdiğin cevaplar</li>
+          <li>Mood, biyografi, imza alıntısı (opsiyonel)</li>
+        </ul>
+
+        <h3>1.3 Eşleşme ve mesaj verileri</h3>
+        <ul>
+          <li>Diğer kullanıcılarla aranızda hesaplanan uyum skoru (algoritma cache'i)</li>
+          <li>Başlattığın sohbetler ve mesajların</li>
+          <li>Bildirim okuma durumun</li>
+        </ul>
+
+        <h3>1.4 Cihaz ve teknik veriler</h3>
+        <ul>
+          <li>Push bildirim için cihaz token'ı (Expo / FCM / APNs)</li>
+          <li>JWT oturum token'ı (yalnızca senin telefonunda saklanır)</li>
+          <li>Sunucu loglarında IP adresi (yalnızca kötüye kullanım/güvenlik amaçlı, en fazla 30 gün)</li>
+        </ul>
+
+        <h2>2. Bu Verileri Nasıl Kullanıyoruz</h2>
+        <ul>
+          <li><strong>Eşleştirme algoritmasını çalıştırmak</strong> — sinema profili + onboarding cevapları + tercihlerden uyum skoru hesaplanır.</li>
+          <li><strong>Sohbet ve bildirim hizmetini sunmak</strong> — yalnızca eşleştiğin kullanıcılarla.</li>
+          <li><strong>Cinsiyet tercihi filtrelemesi</strong> — radar'a yalnızca karşılıklı uyumlu profiller düşer.</li>
+          <li><strong>Hesabını korumak</strong> — şüpheli giriş, kötüye kullanım ve API rate-limit kontrolleri.</li>
+          <li><strong>Anonim, toplu istatistikler</strong> — kişiyi tanımlamayan kullanım metrikleri (örn. "10K kullanıcının ortalama uyum eşiği %58").</li>
+        </ul>
+
+        <h2>3. Üçüncü Taraf Servisler</h2>
+        <p>Aşağıdaki üçüncü taraflara <em>yalnızca işlevin gerektirdiği minimum</em> veri akışı vardır:</p>
+        <ul>
+          <li><strong>OMDb API</strong> — film/dizi meta verisi çeker. Senin kişisel veriler iletilmez; yalnızca arama metni veya IMDb ID.</li>
+          <li><strong>Google &amp; Apple Sign-In</strong> — kullanırsan, hesap doğrulama için sağlayıcının token'ını işleriz.</li>
+          <li><strong>Push delivery (Expo/FCM/APNs)</strong> — yalnızca cihaz token'ı + bildirim metni iletilir.</li>
+          <li><strong>Hosting (DigitalOcean / Hetzner sınıfı)</strong> — veritabanı sunucularımızın bulunduğu altyapı.</li>
+        </ul>
+        <p>Verilerini reklam, profil oluşturma veya satış amaçlı <strong>hiçbir üçüncü tarafa satmıyoruz, kiralamıyoruz, paylaşmıyoruz</strong>.</p>
+
+        <h2>4. Veri Saklama Süreleri</h2>
+        <ul>
+          <li>Hesap verileri: hesabın aktif olduğu sürece + sen sildikten sonra 0 gün (anında ve geri dönülmez şekilde silinir).</li>
+          <li>Mesajlar: konuşmanın iki tarafından biri silindiğinde otomatik FK cascade ile silinir.</li>
+          <li>Sunucu logları: en fazla 30 gün.</li>
+          <li>Anonim toplu metrikler: süresiz (artık kişiyle ilişkilendirilemez).</li>
+        </ul>
+
+        <h2>5. Haklarn (KVKK / GDPR)</h2>
+        <p>Türkiye'de KVKK ve AB'de GDPR kapsamında aşağıdaki haklara sahipsin:</p>
+        <ul>
+          <li><strong>Erişim hakkı</strong> — verilerinin kopyasını talep edebilirsin.</li>
+          <li><strong>Düzeltme hakkı</strong> — yanlış verileri uygulama içinden düzeltebilirsin.</li>
+          <li><strong>Silme hakkı</strong> — uygulama içinden veya <a href="delete-account.html">hesap silme talebi</a> sayfasından hesabını silebilirsin.</li>
+          <li><strong>İşlemeyi kısıtlama</strong> — bildirim ve eşleşme tercihlerini Ayarlar'dan kapatabilirsin.</li>
+          <li><strong>Şikayet hakkı</strong> — Türkiye'de KVKK Kurumu'na, AB'de yerel veri koruma otoritesine başvurabilirsin.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Hesap silme</strong> — uygulamadan: <em>Ayarlar → Hesabı sil</em>.
+          Uygulama erişimin yoksa <a href="delete-account.html">hesap silme talebi formunu</a> kullanabilirsin.
+        </div>
+
+        <h2>6. Çocukların Gizliliği</h2>
+        <p>
+          CinaMatch <strong>13 yaş altı kullanıcılara yönelik değildir</strong>. 13 yaş altı
+          kullanıcının veri toplamadığımızı tespit edersek hesabı derhal silinir.
+          Ebeveynseniz ve çocuğunuzun yanlışlıkla kayıt olduğunu düşünüyorsanız
+          <a href="support.html">destek</a> üzerinden bize ulaşın.
+        </p>
+
+        <h2>7. Veri Güvenliği</h2>
+        <p>
+          Tüm trafik HTTPS üzerinden şifrelenir. Şifreler bcrypt ile saklanır. Veritabanı
+          erişimi yalnızca sınırlı sayıda yöneticiye açıktır ve denetim altındadır.
+        </p>
+
+        <h2>8. Politika Değişiklikleri</h2>
+        <p>
+          Bu politikayı zaman zaman güncelleyebiliriz. Önemli bir değişiklik olduğunda
+          uygulama içi bildirim veya e-posta ile haber veririz.
+        </p>
+
+        <h2>9. İletişim</h2>
+        <p>
+          Sorularını veya taleplerini <a href="mailto:privacy@cinematch.app">privacy@cinematch.app</a>
+          adresine gönderebilir, ya da <a href="support.html">destek sayfası</a> üzerinden bize ulaşabilirsin.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand__mark"></span>CinaMatch</a>
+          <p class="muted" style="margin-top: 14px; font-size: 13px; max-width: 280px;">
+            Sinema zevkine göre kurulan anonim, spoiler-güvenli eşleşme uygulaması.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col__title">Ürün</div>
+          <ul class="footer-col__links">
+            <li><a href="index.html#features">Özellikler</a></li>
+            <li><a href="index.html#how">Nasıl çalışır</a></li>
+            <li><a href="index.html#faq">SSS</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Hesap</div>
+          <ul class="footer-col__links">
+            <li><a href="delete-account.html">Hesabı sil</a></li>
+            <li><a href="support.html">Destek</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col__title">Yasal</div>
+          <ul class="footer-col__links">
+            <li><a href="privacy.html">Gizlilik politikası</a></li>
+            <li><a href="terms.html">Kullanıcı sözleşmesi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 CinaMatch · Tüm hakları saklıdır.</span>
+        <span>Sinema verileri OMDb tarafından sağlanır.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
